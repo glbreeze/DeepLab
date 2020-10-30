@@ -63,7 +63,7 @@ flags.DEFINE_string('eval_label_dir', '../dataset/VOCdevkit/VOC2012/Segmentation
 
 flags.DEFINE_string('output_dir', '../dataset/inference_output', 'Path to the directory to generate inference results')
 
-flags.DEFINE_string('evaluation_data_list', '../dataset/sample_images_list.txt', 'Path to the file listing the inferring images.')
+flags.DEFINE_string('evaluation_data_list', '../dataset/val.txt', 'Path to the file listing the inferring images.')
 
 ##
 flags.DEFINE_boolean('resume', False, 'to resume from previous training ')

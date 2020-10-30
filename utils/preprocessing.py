@@ -24,7 +24,7 @@ def decode_labels(mask, num_images=1, num_classes=21):
   """Decode batch of segmentation masks.
 
   Args:
-    mask: result of inference after taking argmax.
+    mask: result of inference after taking argmax.   # matrix. element 0-21
     num_images: number of images to decode from the batch.
     num_classes: number of classes to predict (including background).
 

@@ -236,7 +236,7 @@ class Model(object):
                        }
             self.update_metrics_op = tf.group(*[op for _, op in self.metrics.values()])
             metrics_variables = tf.get_collection(tf.GraphKeys.LOCAL_VARIABLES,
-                                      scope=('train' if self.mode == tf.estimator.ModeKeys.TRAIN else 'eval')+"metrics")
+                                      scope=('train' if self.mode == tf.estimator.ModeKeys.TRAIN else 'eval')+"_metrics")
             self.metrics_init_op = tf.variables_initializer(metrics_variables)
 
         summaries = []
